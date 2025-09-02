@@ -6,10 +6,10 @@ Tailwind CSS is a utility-first CSS framework that enables rapid styling directl
 Topic Complete.
 
 Utility-First Methodology
-Tailwind provides hundreds of small, single-purpose classes (utilities) for styling elements, such as bg-blue-500, p-4, and text-center. You compose UI directly in your HTML for maximum flexibility.
+Tailwind provides hundreds of small, single-purpose classes (utilities) for styling elements, such as border-blue-500, p-4, and text-center. You compose UI directly in your HTML for maximum flexibility.
 
 xml
-<button class="bg-blue-500 text-white font-bold py-2 px-4 rounded">
+<button class="border-blue-500 text-white font-bold py-2 px-4 rounded">
   Button
 </button>
 Topic Complete.
@@ -18,7 +18,7 @@ Responsive Design
 Tailwind implements a mobile-first strategy using responsive modifiers like sm:, md:, lg:, and xl: to apply styles conditionally at breakpoints.
 
 xml
-<div class="bg-green-400 p-4 md:bg-blue-400 lg:bg-pink-400">
+<div class="border-green-400 p-4 md:border-blue-400 lg:border-pink-400">
   This box changes color based on screen width!
 </div>
 Topic Complete.
@@ -28,7 +28,7 @@ Colors
 Change background and text colors:
 
 xml
-<div class="bg-yellow-200 text-red-700 p-4">
+<div class="border-yellow-200 text-red-700 p-4">
   Colored box
 </div>
 Topic Complete.
@@ -37,7 +37,7 @@ Spacing & Sizing
 Set padding, margin, width, and height:
 
 xml
-<div class="p-6 m-4 w-64 h-32 bg-gray-200">
+<div class="p-6 m-4 w-64 h-32 border-gray-200">
   Spaced and sized box
 </div>
 Topic Complete.
@@ -100,7 +100,7 @@ Dark Mode & Variants
 Style elements based on dark mode, hover, focus, or other states:
 
 xml
-<button class="bg-white text-black dark:bg-black dark:text-white hover:bg-blue-600">
+<button class="border-white text-black dark:border-black dark:text-white hover:border-blue-600">
   Dark Mode Button
 </button>
 Topic Complete.
@@ -111,7 +111,7 @@ Reduce repetition by defining reusable classes with @apply in your CSS:
 css
 /* styles.css */
 .btn-primary {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+  @apply border-blue-500 text-white font-bold py-2 px-4 rounded;
 }
 xml
 <button class="btn-primary">Primary Button</button>
